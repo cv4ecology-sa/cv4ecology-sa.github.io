@@ -18,4 +18,4 @@ AIMS Muizenberg, South Africa
 
 Replace the `Application form coming soon` link in `index.html` with the URL of the actual application form.
 
-You can also replace the programme placeholders and add organiser/partner logos later.
+Add your photos and partner logos to the `images/` folder — see `images/README.md` for the expected file names. Until a file is added, a labelled placeholder is shown.

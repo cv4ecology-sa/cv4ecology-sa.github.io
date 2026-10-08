@@ -5,13 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Computer Vision for Ecology in South Africa — 22–26 February 2027, AIMS Muizenberg.">
   <title>Computer Vision for Ecology in South Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!--
+  IMAGES
+  Every image slot below shows a labelled placeholder until you add a file.
+  Put your photos in the images/ folder using the file names shown in each
+  <img src="...">. If a file is missing, the placeholder is shown instead.
+  Remember to update the alt text and the figure captions to match your photos.
+-->
+
 <body>
-  <header class="hero">
+  <header class="hero" id="top">
+    <svg class="contours" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <ellipse cx="560" cy="300" rx="60"  ry="38"  transform="rotate(-18 560 300)"/>
+        <ellipse cx="555" cy="305" rx="110" ry="72"  transform="rotate(-16 555 305)"/>
+        <ellipse cx="548" cy="312" rx="165" ry="110" transform="rotate(-13 548 312)"/>
+        <ellipse cx="540" cy="322" rx="225" ry="152" transform="rotate(-10 540 322)"/>
+        <ellipse cx="530" cy="334" rx="290" ry="198" transform="rotate(-8 530 334)"/>
+        <ellipse cx="518" cy="348" rx="360" ry="248" transform="rotate(-6 518 348)"/>
+        <ellipse cx="505" cy="364" rx="435" ry="302" transform="rotate(-4 505 364)"/>
+        <ellipse cx="490" cy="382" rx="515" ry="360" transform="rotate(-2 490 382)"/>
+      </g>
+    </svg>
+
     <nav class="nav">
-      <a class="brand" href="#top">CV for Ecology SA</a>
+      <a class="brand" href="#top">CV for Ecology <em>South Africa</em></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#programme">Programme</a>
@@ -20,39 +44,52 @@
       </div>
     </nav>
 
-    <div class="hero-content" id="top">
-      <p class="eyebrow">SOUTH AFRICA · FEBRUARY 2027</p>
-      <h1>Computer Vision<br>for Ecology in South Africa</h1>
-      <p class="hero-intro">
-        A hands-on workshop introducing computer vision methods for ecological
-        research and conservation.
-      </p>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="kicker">Workshop · Cape Town · February 2027</p>
+        <h1>Computer Vision for Ecology <em>in South Africa</em></h1>
+        <p class="hero-intro">
+          A hands-on workshop introducing computer vision methods for ecological
+          research and conservation.
+        </p>
 
-      <div class="event-details">
-        <div>
-          <span>DATES</span>
-          <strong>22–26 February 2027</strong>
-        </div>
-        <div>
-          <span>LOCATION</span>
-          <strong>AIMS Muizenberg, South Africa</strong>
-        </div>
-        <div>
-          <span>APPLICATION DEADLINE</span>
-          <strong>20 November 2026</strong>
-        </div>
+        <dl class="event-details">
+          <div>
+            <dt>Dates</dt>
+            <dd>22–26 February 2027</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>AIMS Muizenberg, South Africa</dd>
+          </div>
+          <div>
+            <dt>Application deadline</dt>
+            <dd>20 November 2026</dd>
+          </div>
+        </dl>
+
+        <a class="button" href="#application">Apply to the workshop</a>
       </div>
 
-      <a class="button" href="#application">Apply to the workshop</a>
+      <figure class="figure hero-figure">
+        <div class="photo tall">
+          <span class="photo-placeholder">Hero photo<br><small>images/hero.jpg</small></span>
+          <img src="images/hero.jpg" alt="" onerror="this.remove()">
+        </div>
+        <figcaption><span>Fig. 1</span> Add a caption for your hero photo, e.g. species, place and photographer.</figcaption>
+      </figure>
     </div>
   </header>
 
   <main>
     <section class="section" id="about">
-      <div class="section-label">01 · ABOUT</div>
+      <div class="section-label">
+        <span class="num">I.</span>
+        <span>About</span>
+      </div>
       <div class="section-content">
         <h2>Making computer vision more accessible for ecology.</h2>
-        <p>
+        <p class="lead">
           Computer vision (CV) is transforming ecological research by automating
           the analysis of data collected from camera traps, drones, satellites
           and recording devices. While ecologists often have training in
@@ -72,123 +109,182 @@
       </div>
     </section>
 
+    <section class="plates" aria-label="Examples of ecological imagery">
+      <figure class="figure">
+        <div class="photo">
+          <span class="photo-placeholder">Camera trap image<br><small>images/camera-trap.jpg</small></span>
+          <img src="images/camera-trap.jpg" alt="" onerror="this.remove()">
+        </div>
+        <figcaption><span>Fig. 2</span> Camera traps</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="photo">
+          <span class="photo-placeholder">Drone / aerial image<br><small>images/drone.jpg</small></span>
+          <img src="images/drone.jpg" alt="" onerror="this.remove()">
+        </div>
+        <figcaption><span>Fig. 3</span> Drone surveys</figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="photo">
+          <span class="photo-placeholder">Satellite / landscape image<br><small>images/satellite.jpg</small></span>
+          <img src="images/satellite.jpg" alt="" onerror="this.remove()">
+        </div>
+        <figcaption><span>Fig. 4</span> Satellite imagery</figcaption>
+      </figure>
+    </section>
+
     <section class="highlight">
-      <div>
-        <p class="eyebrow">WORKSHOP FORMAT</p>
-        <h2>Five days of practical learning, discussion and collaboration.</h2>
-      </div>
-      <div class="highlight-text">
-        <p>
-          The workshop will combine lectures, practical sessions and ecological
-          case studies, with a focus on applying computer vision to real-world
-          research and conservation challenges.
-        </p>
+      <div class="highlight-inner">
+        <div>
+          <p class="kicker">Workshop format</p>
+          <h2>Five days of practical learning, discussion and collaboration.</h2>
+        </div>
+        <div class="highlight-text">
+          <p>
+            The workshop will combine lectures, practical sessions and ecological
+            case studies, with a focus on applying computer vision to real-world
+            research and conservation challenges.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="programme">
-      <div class="section-label">02 · PROGRAMME</div>
+      <div class="section-label">
+        <span class="num">II.</span>
+        <span>Programme</span>
+      </div>
       <div class="section-content">
         <h2>What we will cover</h2>
         <div class="cards">
           <article class="card">
-            <span>01</span>
+            <span class="card-num">i</span>
             <h3>Computer vision foundations</h3>
             <p>Core concepts and deep learning methods for analysing ecological imagery.</p>
           </article>
           <article class="card">
-            <span>02</span>
+            <span class="card-num">ii</span>
             <h3>Ecological applications</h3>
             <p>Examples from camera traps, biodiversity monitoring and conservation.</p>
           </article>
           <article class="card">
-            <span>03</span>
+            <span class="card-num">iii</span>
             <h3>Hands-on practice</h3>
             <p>Practical exercises using real ecological datasets and modern tools.</p>
           </article>
           <article class="card">
-            <span>04</span>
+            <span class="card-num">iv</span>
             <h3>From model to research</h3>
             <p>Discussing data, annotation, generalisation and responsible deployment.</p>
           </article>
         </div>
-        <p class="muted">The detailed programme will be announced soon.</p>
+        <p class="note">The detailed programme will be announced soon.</p>
       </div>
     </section>
 
-    <section class="section alt" id="application">
-      <div class="section-label">03 · APPLICATION</div>
-      <div class="section-content application-grid">
-        <div>
-          <h2>Applications are open.</h2>
-          <p>
-            The workshop is intended for researchers, students and conservation
-            practitioners working with ecological data and interested in
-            developing practical skills in computer vision.
-          </p>
-          <p>
-            Places are limited and participants will be selected based on their
-            application.
-          </p>
-          <a class="button dark" href="#">Application form coming soon</a>
+    <section class="band" id="application">
+      <div class="section">
+        <div class="section-label">
+          <span class="num">III.</span>
+          <span>Application</span>
         </div>
+        <div class="section-content application-grid">
+          <div>
+            <h2>Applications are open.</h2>
+            <p>
+              The workshop is intended for researchers, students and conservation
+              practitioners working with ecological data and interested in
+              developing practical skills in computer vision.
+            </p>
+            <p>
+              Places are limited and participants will be selected based on their
+              application.
+            </p>
+            <a class="button" href="#">Application form coming soon</a>
+          </div>
 
-        <div class="deadline-box">
-          <span>APPLICATION DEADLINE</span>
-          <strong>20 November 2026</strong>
-          <p>Selected participants will receive further information about registration, accommodation and travel.</p>
+          <aside class="specimen-label">
+            <span class="label-title">Application deadline</span>
+            <strong>20 November 2026</strong>
+            <p>Selected participants will receive further information about registration, accommodation and travel.</p>
+          </aside>
         </div>
       </div>
     </section>
 
     <section class="section" id="practical">
-      <div class="section-label">04 · PRACTICAL INFORMATION</div>
+      <div class="section-label">
+        <span class="num">IV.</span>
+        <span>Practical information</span>
+      </div>
       <div class="section-content">
         <h2>Plan your participation</h2>
 
-        <div class="info-list">
-          <div class="info-item">
-            <span>WHERE</span>
-            <div>
-              <strong>AIMS Muizenberg</strong>
-              <p>Muizenberg, Cape Town, South Africa</p>
+        <div class="practical-grid">
+          <dl class="info-list">
+            <div class="info-item">
+              <dt>Where</dt>
+              <dd>
+                <strong>AIMS Muizenberg</strong>
+                <p>Muizenberg, Cape Town, South Africa</p>
+              </dd>
             </div>
-          </div>
 
-          <div class="info-item">
-            <span>WHEN</span>
-            <div>
-              <strong>22–26 February 2027</strong>
-              <p>Five-day workshop</p>
+            <div class="info-item">
+              <dt>When</dt>
+              <dd>
+                <strong>22–26 February 2027</strong>
+                <p>Five-day workshop</p>
+              </dd>
             </div>
-          </div>
 
-          <div class="info-item">
-            <span>ACCOMMODATION</span>
-            <div>
-              <strong>Accommodation information will be provided to selected participants.</strong>
-              <p>Shared accommodation will be available. A limited number of private rooms may be available at an additional cost, subject to availability.</p>
+            <div class="info-item">
+              <dt>Accommodation</dt>
+              <dd>
+                <strong>Accommodation information will be provided to selected participants.</strong>
+                <p>Shared accommodation will be available. A limited number of private rooms may be available at an additional cost, subject to availability.</p>
+              </dd>
             </div>
-          </div>
 
-          <div class="info-item">
-            <span>FUNDING</span>
-            <div>
-              <strong>Limited accommodation support may be available.</strong>
-              <p>Participants who require financial assistance will be able to apply for support. Awards will depend on available funding.</p>
+            <div class="info-item">
+              <dt>Funding</dt>
+              <dd>
+                <strong>Limited accommodation support may be available.</strong>
+                <p>Participants who require financial assistance will be able to apply for support. Awards will depend on available funding.</p>
+              </dd>
             </div>
-          </div>
+          </dl>
+
+          <figure class="figure">
+            <div class="photo tall">
+              <span class="photo-placeholder">Venue photo<br><small>images/venue.jpg</small></span>
+              <img src="images/venue.jpg" alt="" onerror="this.remove()">
+            </div>
+            <figcaption><span>Fig. 5</span> AIMS Muizenberg, Cape Town.</figcaption>
+          </figure>
         </div>
+      </div>
+    </section>
+
+    <section class="partners" aria-label="Organisers and partners">
+      <p class="kicker">Organisers &amp; partners</p>
+      <div class="logos">
+        <div class="logo-slot"><span>Logo</span><img src="images/logo-1.png" alt="" onerror="this.remove()"></div>
+        <div class="logo-slot"><span>Logo</span><img src="images/logo-2.png" alt="" onerror="this.remove()"></div>
+        <div class="logo-slot"><span>Logo</span><img src="images/logo-3.png" alt="" onerror="this.remove()"></div>
+        <div class="logo-slot"><span>Logo</span><img src="images/logo-4.png" alt="" onerror="this.remove()"></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>
-      <strong>Computer Vision for Ecology in South Africa</strong>
-      <p>22–26 February 2027 · AIMS Muizenberg, South Africa</p>
+    <div class="footer-inner">
+      <div>
+        <strong>Computer Vision for Ecology in South Africa</strong>
+        <p>22–26 February 2027 · AIMS Muizenberg, South Africa</p>
+      </div>
+      <p class="footer-note">Organised in the spirit of CV4Ecology.</p>
     </div>
-    <p class="footer-note">Organised in the spirit of CV4Ecology.</p>
   </footer>
 </body>
 </html>
