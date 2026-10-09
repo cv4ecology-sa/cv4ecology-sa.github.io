@@ -55,19 +55,6 @@ h1 em, h2 em, .brand em {
   margin: 0 0 18px;
 }
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 18px;
-  padding: 6px 16px;
-  background: var(--green);
-  color: var(--paper);
-  font-size: .9rem;
-  font-weight: 600;
-  border-radius: 999px;
-}
-
 /* ---------- Hero ---------- */
 
 .hero {
@@ -496,6 +483,21 @@ footer {
 footer strong { font-family: var(--serif); font-weight: 500; font-size: 1.15rem; }
 footer p { margin: 6px 0 0; color: #c9cfbb; font-size: .92rem; }
 .footer-note { font-family: var(--serif); font-style: italic; }
+
+/* Light sage pill so it stands out against the dark green footer */
+footer .pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 0 0 14px;
+  padding: 6px 16px;
+  background: var(--sage);
+  color: var(--green-deep);
+  font-size: .9rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
 
 /* ---------- Responsive ---------- */
 
