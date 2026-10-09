@@ -136,7 +136,7 @@ h1 em { display: block; }
 
 .event-details {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   justify-content: start;
   margin: 0 0 40px;
   border-top: 1px solid var(--line);
