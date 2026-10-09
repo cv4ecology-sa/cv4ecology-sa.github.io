@@ -496,14 +496,6 @@ footer {
 footer strong { font-family: var(--serif); font-weight: 500; font-size: 1.15rem; }
 footer p { margin: 6px 0 0; color: #c9cfbb; font-size: .92rem; }
 .footer-note { font-family: var(--serif); font-style: italic; }
-
-/* Put the badge on its own line, above the footer title */
-footer .hero-badge {
-  display: block;
-  width: fit-content;
-  margin: 0 0 14px;
-}
-
 /* ---------- Responsive ---------- */
 
 @media (max-width: 960px) {
