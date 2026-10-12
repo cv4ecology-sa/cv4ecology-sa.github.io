@@ -217,6 +217,10 @@ h1 em { display: block; }
 
 .photo.tall { aspect-ratio: 4 / 5; }
 
+/* Show the whole image instead of cropping it to the frame. */
+.photo.fit { background: none; }
+.photo.fit img { object-fit: contain; }
+
 .photo img {
   position: absolute;
   inset: 0;
