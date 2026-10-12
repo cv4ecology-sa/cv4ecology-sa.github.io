@@ -209,7 +209,6 @@ h1 em { display: block; }
   background:
     repeating-linear-gradient(45deg, transparent 0 12px, rgba(140, 155, 118, .12) 12px 13px),
     var(--paper-deep);
-  border: 1px dashed var(--sage);
   border-radius: 3px;
   overflow: hidden;
   display: grid;
@@ -460,7 +459,6 @@ h1 em { display: block; }
   height: 110px;
   display: grid;
   place-items: center;
-  border: 1px dashed var(--line);
   border-radius: 3px;
   color: var(--sage);
   font-family: var(--serif);
