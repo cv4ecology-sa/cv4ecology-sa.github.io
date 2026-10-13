@@ -454,7 +454,8 @@ h1 em { display: block; }
 
 .logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 280px));
+  justify-content: center;
   gap: 20px;
 }
 
